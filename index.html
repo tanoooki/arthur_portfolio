@@ -23,13 +23,13 @@
     <div class="pb-10 pl-10 pr-10 bg-black">
       <div class="flex gap-x-8 max-w-screen-xl ml-auto mr-auto">
         <img
-          class="block max-w-md shadow-inner"
+          class="block shadow-inner max-h-[420px] transition duration-300 ease-in-out hover:scale-105"
           src="./src/img/403888352_855279686234001_133991585863576216_n.jpg"
           alt="Arthur Espíndola Galvão"
         />
         <div>
           <div class='console-container text-9xl tracking-widest font-bold none'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
-          <p class="tracking-wide text-justify leading-loose py-10">
+          <p class="tracking-wide text-justify leading-loose py-10 pr-10">
             Com 20 anos de idade e raízes profundas em Itajaí, SC, minha jornada
             na fotografia é um testemunho do poder de transformação das imagens.
             Desde cedo, fui cativado pelo mundo da fotografia, mergulhando de
@@ -41,10 +41,11 @@
         </div>
       </div>
     </div>
+    <div class="detail"></div>
     <div class="bg-zinc-900 pt-5">
       <div class="max-w-screen-xl ml-auto mr-auto">
       <h1 class="text-6xl tracking-widest font-medium">Paixão em Foco:</h1>
-      <h1 class="text-5xl tracking-widest text-right pb-10 font-medium">
+      <h1 class="text-5xl tracking-widest text-right pr-10 pb-10 font-medium">
         A Arte de Capturar o Cotidiano
       </h1>
       <div class="flex gap-x-8 pb-10 pl-10 pr-10">
@@ -66,36 +67,38 @@
             perspectiva com o mundo.
           </p>
         </div>
-        <img class="max-w-md" src="./src/img/Sem Título-1.jpg" alt="Street" />
+        <img class="max-h-[420px]" src="./src/img/Sem Título-1.jpg" alt="Street" />
       </div>
     </div>
     </div>
+    <div class="detail_2"></div>
     <div class="bg-black pt-10">
       <div class="max-w-screen-xl ml-auto mr-auto">
-      <div class="grid grid-cols-3 relative pb-24">
+      <div class="grid grid-cols-3 relative pb-60 auto-rows-auto gap-10">
         <img
-          class="block max-w-sm shadow-2xl"
+          class="block max-h-[410px]"
           src="./src/img/1.jpg"
           alt="Streets"
         />
         <img
-          class="block max-w-xs shadow-2xl"
+          class="block max-h-[440px]"
           src="./src/img/2.jpg"
           alt="Streets"
         />
         <img
-          class="block max-w-xs shadow-2xl"
+          class="block max-h-[480px]"
           src="./src/img/3.jpg"
           alt="Streets"
         />
         <img
-          class="block max-w-xs absolute top-96"
+          class="block max-h-[320px] absolute bottom-10 left-0"
           src="./src/img/4.jpg"
           alt="Streets"
         />
       </div>
     </div>
     </div>
+    <div class="detail"></div>
     <div class="bg-zinc-900">
       <div class="max-w-screen-xl ml-auto mr-auto">
       <h1 class="text-5xl tracking-widest pb-10 pt-10">Parcerias</h1>
@@ -133,8 +136,9 @@
     </div>
     <div class="bg-black pt-10">
       <div class="max-w-screen-xl ml-auto mr-auto">
-      <h1 class="text-5xl tracking-widest">Contato</h1>
-      <div class="flex gap-x-10 justify-center pb-20">
+      <h1 class="text-5xl tracking-widest pb-10">Contato</h1>
+      <div class="flex gap-x-10  pb-20">
+        <p class="tracking-wide text-justify leading-loose max-w-2xl">Estou disponível para capturar os momentos especiais da sua vida! Entre em contato comigo para agendar uma sessão fotográfica ou para discutir suas ideias e necessidades. Estou comprometido em fornecer um serviço personalizado e de alta qualidade para tornar seus momentos inesquecíveis. Mal posso esperar para colaborar com você e transformar suas visões em realidade através da fotografia</p>
         <a href="https://www.instagram.com/_photos_lanches/" target="blank">
           <div class="flex gap-x-4">
             <img
@@ -154,12 +158,14 @@
         </a>
       </div>
       <a href="https://tanoooki.github.io" target="blank"
-        ><p class="text-center font-extralight pb-10">Tanooki © 2024</p></a
+        ><p class="text-center font-extralight pb-10">Tanooki © 2024. Todos os direitos reservados.</p></a
       >
     </div>
     </div>
 
     <script>
+
+      
       // function([string1, string2],target id,[color1,color2])    
  consoleText(['WHO I AM'], 'text',['white','white','white']);
 
@@ -211,6 +217,7 @@ function consoleText(words, id, colors) {
     }
   }, 400)
 }
+
     </script>
   </body>
 </html>
