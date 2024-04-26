@@ -163,11 +163,37 @@
     </div>
     </div>
 
+
+    <div class = "group fixed bottom-0 right-0 p-2  flex items-end justify-end w-24 h-24 ">
+      <!-- main -->
+      <div class = "text-white shadow-xl flex items-center justify-center p-3 rounded-full bg-gradient-to-r from-green-500 to-green-700 z-50 absolute  ">
+          <img src="./src/img/icon/icons8-whatsapp.svg" alt="">
+      </div>
+      <!-- sub left -->
+      <a href="https://wa.me/554792431004" target="blank"
+        class="absolute">
+      <div class=" rounded-full transition-all duration-[0.2s] ease-out scale-y-0 group-hover:scale-y-100 group-hover:-translate-x-16   flex  p-2 hover:p-3 bg-green-300 scale-100 hover:bg-green-400 text-white">
+        <img class="invert max-w-6" src="./src/img/icon/whats.png" alt="" />
+      </div>
+      </a>
+
+      <!-- sub middle -->
+      <a class="absolute" href="https://www.instagram.com/_photos_lanches/" target="blank">
+      <div class=" rounded-full transition-all duration-[0.2s] ease-out scale-x-0 group-hover:scale-x-100 group-hover:-translate-y-14 group-hover:-translate-x-14   flex  p-2 hover:p-3 bg-gradient-to-r from-red-500 to-purple-700 text-white">
+        <img
+        class="invert max-w-6"
+        src="./src/img/icon/insta.png"
+        alt="Instagram"
+      />
+      </div></a>
+  </div>
+
+
     <script>
 
       
       // function([string1, string2],target id,[color1,color2])    
- consoleText(['WHO I AM'], 'text',['white','white','white']);
+ consoleText(['WHO I AM'], 'text',['white']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
@@ -199,7 +225,7 @@ function consoleText(words, id, colors) {
         x = -1;
         letterCount += x;
         waiting = false;
-      }, 1000)
+      }, 3000)
     } else if (waiting === false) {
       target.innerHTML = words[0].substring(0, letterCount)
       letterCount += x;
